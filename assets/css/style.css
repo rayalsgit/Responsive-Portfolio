@@ -1,0 +1,640 @@
+body {
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, 'sans-serif';
+    font-weight: normal;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+#container {
+    width: 960px;
+    margin: 40px auto;
+    position: relative;
+    background-color: #4aaaa5;
+}
+
+h1,
+h2,
+{
+    font-family: "Times New Roman", Times, serif;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: solid #cccccc 2px;
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.big_header {
+    height: 80px;
+}
+
+#nav {
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+    padding: 0;
+}
+
+#profile_name {
+    padding: 20px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    position: absolute;
+    left: 40px;
+    bottom: 2px;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 38px;
+}
+
+h2 {
+    position: absolute;
+    margin: 0;
+    left: 10px;
+    bottom: 20px;
+    color: #4aaaa5;
+    font-size: 28px;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+p {
+    margin-top: 10px;
+}
+
+#main_content {
+    position: relative;
+    background-image: url("../images/old_moon.png");
+    background-repeat: repeat;
+    width: 100%;
+    min-height: 680px;
+}
+
+#main_content_long {
+    position: relative;
+    background-image: url("../images/old_moon.png");
+    background-repeat: repeat;
+    width: 100%;
+    min-height: 680px;
+}
+
+article {
+    border: solid #cccccc 2px;
+    background-color: #ffffff;
+    float: left;
+    margin-top: 60px;
+    margin-left: 35px;
+    width: 530px;
+    padding: 20px;
+}
+
+#profile_pic {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 20px 20px 20px 0px;
+}
+
+aside {
+    border: solid #cccccc 2px;
+    background-color: #ffffff;
+    float: right;
+    margin-right: 35px;
+    margin-top: 60px;
+    width: 232px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #666666;
+    padding: 30px;
+    margin: 10px 0px;
+    text-align: right;
+    color: #cccccc;
+    font-size: 14px;
+    height: 80px;
+}
+
+.footerText {
+    margin: 25px 0px;
+    font-weight: normal;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li {
+    display: inline-block;
+    padding: 14px 10px;
+}
+
+ul li a {
+    display: block;
+    text-align: center;
+    padding: 0;
+    text-decoration: none;
+    color: #777777;
+}
+
+ul.sidenav {
+    list-style-type: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 0;
+}
+
+ul.sidenav li {
+    display: inline-block;
+}
+
+ul.sidenav li a img {
+    height: 60px;
+    width: 60px;
+    margin: 5px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+.txtBox {
+    width: 95%;
+    padding: 5px 10px;
+    margin: 2px 0px;
+    display: block;
+}
+
+.msgBox {
+    height: 150px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 25px 2px 10px 2px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.portfolio_div {
+    position: relative;
+    padding: 0px;
+    width: 230px;
+    height: 140px;
+    margin-top: 20px;
+}
+
+.portfolio_div:nth-child(even) {
+    float: left;
+    margin-left: 0px
+}
+
+.portfolio_div:nth-child(odd) {
+    float: right;
+    margin-right: 0px
+}
+
+.portfolio_image {
+    position: absolute;
+    width: 230px;
+    height: 140px;
+    margin: 0px;
+}
+
+.portfolio_link {
+    position: absolute;
+    margin: 0;
+    bottom: 8px;
+    width: 230px;
+    padding: 8px 0px;
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+    body {
+        font-size: 16px;
+        font-weight: bold;
+        color: #888888;
+    }
+    h1 {
+        font-size: 34px;
+        margin: 10px;
+    }
+    h2 {
+        font-size: 28px;
+        left: 20px;
+    }
+    #container {
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+    }
+    #nav {
+        right: 110px;
+    }
+    #profile_name {
+        left: 110px;
+    }
+    #main_content {
+        margin: 0px 0px 10px 0px;
+        min-height: 750px;
+        display: inline-block;
+    }
+    #main_content_long {
+        margin: 0px 0px 10px 0px;
+        min-height: 1240px;
+        display: inline-block;
+    }
+    article {
+        border: solid #cccccc 2px;
+        background-color: #ffffff;
+        float: left;
+        margin-left: 110px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+        width: 366px;
+        padding: 20px;
+    }
+    #profile_pic {
+        float: none;
+        width: 324px;
+        height: 220px;
+        margin: 20px 20px 10px 20px;
+    }
+    p {
+        margin: 10px 20px;
+    }
+    aside {
+        border: solid #cccccc 2px;
+        background-color: #ffffff;
+        float: right;
+        margin-right: 110px;
+        margin-top: 32px;
+        width: 232px;
+        padding: 20px;
+    }
+    footer {
+        font-size: 14px;
+        font-weight: normal;
+        text-align: center;
+        height: 80px;
+        padding: 10px;
+        margin: 0px;
+    }
+    .footerText {
+        margin: 25px 0px;
+    }
+    label {
+        margin: 30px 20px 0px 20px;
+        width: 300px;
+    }
+    .txtBox {
+        width: 300px;
+        padding: 5px 10px;
+        margin: 0px 20px;
+        display: block;
+    }
+    .msgBox {
+        height: 200px;
+    }
+    input[type=submit] {
+        margin: 30px 2px 20px 20px;
+    }
+    .portfolio_div {
+        position: relative;
+        padding: 0px;
+        width: 330px;
+        height: 200px;
+        float: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    .portfolio_div:nth-child(even) {
+        float: none;
+        margin-left: 20px;
+    }
+    .portfolio_div:nth-child(odd) {
+        float: none;
+        margin-left: 20px;
+    }
+    .portfolio_image {
+        position: absolute;
+        width: 330px;
+        height: 200px;
+        margin: 0px;
+    }
+    .portfolio_link {
+        position: absolute;
+        margin: 0;
+        bottom: 8px;
+        width: 330px;
+        padding: 8px 0px;
+        background-color: #4aaaa5;
+        border: none;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+
+
+/*Rules for screen widths at 768px or lower*/
+
+@media screen and (max-width: 768px) {
+    body {
+        line-height: 150%;
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 34px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    p {
+        margin: 20px;
+    }
+    #container {
+        width: 768px;
+        margin: 20px auto;
+        position: relative;
+    }
+    #main_content {
+        margin: 0px 0px 10px 0px;
+        min-height: 720px;
+        display: inline-block;
+    }
+    #main_content_long {
+        position: relative;
+        background-image: url("../images/old_moon.png");
+        background-repeat: repeat;
+        width: 100%;
+        min-height: 800px;
+        display: inline-block;
+    }
+    #profile_name {
+        left: 30px;
+    }
+    #profile_pic {
+        width: 350px;
+        height: 260px;
+        float: left;
+        margin: 20px 40px 20px 20px;
+    }
+    article {
+        float: left;
+        width: 670px;
+        margin: 25px;
+    }
+    aside {
+        float: left;
+        width: 710px;
+        margin: 0px 25px 25px 25px;
+    }
+    footer {
+        height: 80px;
+        padding: 10px;
+        text-align: center;
+    }
+    #nav {
+        right: 25px;
+    }
+    .msgBox {
+        height: 100px;
+    }
+    label {
+        margin: 20px 20px 0px 10px;
+        width: 600px;
+    }
+    .txtBox {
+        width: 630px;
+        padding: 5px 10px;
+        margin: 0px 10px;
+        display: block;
+    }
+    input[type=submit] {
+        margin: 20px 2px 20px 10px;
+    }
+    .portfolio_div {
+        position: relative;
+        padding: 0px;
+        width: 260px;
+        height: 140px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    .portfolio_div:nth-child(even) {
+        float: left;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .portfolio_div:nth-child(odd) {
+        float: right;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .portfolio_image {
+        position: absolute;
+        width: 260px;
+        height: 140px;
+        margin: 0px;
+    }
+    .portfolio_link {
+        position: absolute;
+        margin: 0;
+        bottom: 8px;
+        width: 260px;
+        padding: 8px 0px;
+        background-color: #4aaaa5;
+        border: none;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+
+
+
+
+@media screen and (max-width: 640px) {
+
+    body {
+        font-size: 12px;
+        font-weight: bold;
+        color: #888888;
+    }
+    h1 {
+        font-size: 20px;
+        margin: 10px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 16px;
+        left: 20px;
+        bottom: 10px;
+
+    }
+    #container {
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+    }
+    .big_header {
+        display: block;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        height: 90px;
+    }
+
+    header {
+        height: 40px;
+    }
+    #nav {
+        margin: 0px auto;
+        width: 210px;
+        position: absolute;
+        margin: 0px 200px;
+        bottom: 0px; 
+        right: 0px;     
+
+    }
+    #profile_name {
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin: 0px;
+        height: 38px;
+        padding: 10px 0px 0px 0px;
+    }
+    #main_content {
+        margin: 0px 0px 10px 0px;
+        min-height: 750px;
+        display: inline-block;
+    }
+    #main_content_long {
+        margin: 0px 0px 10px 0px;
+        min-height: 1240px;
+        display: inline-block;
+    }
+    article {
+        border: solid #cccccc 2px;
+        background-color: #ffffff;
+        float: left;
+        margin-left: 110px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 366px;
+        padding: 20px;
+    }
+    #profile_pic {
+        float: none;
+        width: 324px;
+        height: 220px;
+        margin: 20px 20px 10px 20px;
+    }
+    p {
+        margin: 10px 20px;
+    }
+    aside {
+        border: solid #cccccc 2px;
+        background-color: #ffffff;
+        float: left;
+        margin-left: 110px;
+        margin-top: 10px;
+        width: 366px;
+        padding: 20px;
+    }
+    footer {
+        font-size: 12px;
+        font-weight: normal;
+        text-align: center;
+        height: 80px;
+        padding: 10px;
+        margin: 0px;
+    }
+    .footerText {
+        margin: 25px 0px;
+    }
+    label {
+        margin: 30px 20px 0px 20px;
+        width: 300px;
+    }
+    .txtBox {
+        width: 300px;
+        padding: 5px 10px;
+        margin: 0px 20px;
+        display: block;
+    }
+    .msgBox {
+        height: 140px;
+    }
+    input[type=submit] {
+        margin: 30px 2px 20px 20px;
+    }
+    .portfolio_div {
+        position: relative;
+        padding: 0px;
+        width: 260px;
+        height: 140px;
+        float: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    .portfolio_div:nth-child(even) {
+        float: none;
+        margin-left: 50px;
+    }
+    .portfolio_div:nth-child(odd) {
+        float: none;
+        margin-left: 50px;
+    }
+    .portfolio_image {
+        position: absolute;
+        width: 260px;
+        height: 140px;
+        margin: 0px;
+    }
+    .portfolio_link {
+        position: absolute;
+        margin: 0;
+        bottom: 8px;
+        width: 260px;
+        padding: 8px 0px;
+        background-color: #4aaaa5;
+        border: none;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+    }
+
+}
